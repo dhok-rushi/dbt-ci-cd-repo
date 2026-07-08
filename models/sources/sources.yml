@@ -1,0 +1,33 @@
+version: 2
+
+sources:
+  - name: raw
+    description: "Raw ride sharing source data loaded from CSV files into Snowflake."
+
+    database: RIDE_SHARING_DB
+    schema: RAW
+
+    tables:
+      - name: raw_customers
+        description: "Raw customer data"
+
+      - name: raw_drivers
+        description: "Raw driver data"
+
+      - name: raw_vehicles
+        description: "Raw vehicle data"
+
+      - name: raw_locations
+        description: "Raw location data"
+
+      - name: raw_promotions
+        description: "Raw promotion data"
+
+      - name: raw_trips
+        description: "Raw trip transactions"
+
+      - name: raw_payments
+        description: "Raw payment transactions"
+
+      - name: raw_trip_events
+        description: "Raw trip lifecycle events"
